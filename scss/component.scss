@@ -1,0 +1,112 @@
+/*mobile button area*/
+body{
+  input[type=checkbox]#gnbcheck{
+    display: none;
+  }
+  #gnbbtn{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    z-index: 900;
+    span{
+      position: absolute;
+      top: 16px;
+      height: 1.6px;
+      width: 32px;
+      background: #fff;
+      transform: translateY(-50%);
+      &:nth-child(1){
+        top: 8px;
+      }
+      &:nth-child(3){
+        top: 24px;
+      }
+    }
+  }
+  #header{
+    .row{
+      #gnb{
+        #mobile_close_btn{
+          display: none;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 32px;
+          height: 32px;
+          &:before,&:after{
+            content: '';
+            position: absolute;
+            height: 1.6px;
+            width: 32px;
+            background: #fff;
+            top: 16px;
+            transform: translateY(-50%) rotate(45deg);
+          }
+          &:before{
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+// button common style
+.common_btn{
+  width: 275px;
+  height: 60px;
+  padding: 20px 40px;
+  margin-top: 30px;
+  transition: .5s;
+  a{
+    display: block;
+    font-size: $fontSizeSmall;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.common_btn.type_a{
+  background: #fff;
+  margin-right: 30px;
+  a{
+    color: #000;
+  }
+  &:hover{
+    background: $pointColorPrimary;
+    a{ color: #fff;}
+  }
+}
+.common_btn.type_b{
+  background: $btnBgPrimary;
+  a{
+    color: #fff;
+  }
+  &:hover{
+    background: $pointColorPrimary;
+  }
+}
+.common_btn.type_c{
+  width: 400px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+//input style
+
+input[type=text]{
+  width: 800px;
+  height: 80px;
+  border: 1px solid #fff;
+  border-radius: 80px;
+  background: none;
+  padding: 50px;
+  font-size: $fontSizeMiddle;
+  color: #fff;
+  &::placeholder{
+    color: #eee;
+    font-size: $fontSizeMiddle;
+  }
+}

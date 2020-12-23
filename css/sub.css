@@ -1,0 +1,149 @@
+body.sub .wrapper {
+  height: 600px;
+}
+
+body.sub #section1 {
+  padding: 100px 0;
+}
+
+body.sub #section1 .row {
+  margin: 50px 0;
+}
+
+body.sub #section1 .row:nth-child(1) .col:first-child {
+  background: url("../img/virus01.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+body.sub #section1 .row:nth-child(2) .col:first-child {
+  background: none;
+  padding-left: 100px;
+}
+
+body.sub #section1 .row:nth-child(2) .col:last-child {
+  background: url("../img/sub01-2.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body.sub #section1 .row:nth-child(3) .col:first-child {
+  background: url("../img/sub01-3.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body.sub #section1 .row:nth-child(4) .col:first-child {
+  background: none;
+  padding-left: 100px;
+}
+
+body.sub #section1 .row:nth-child(4) .col:last-child {
+  background: url("../img/sub01-4.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+body.sub #section2 {
+  padding: 100px 0;
+}
+
+body.sub #section2 .row .col .flex_wrap:last-child .flex_item:nth-child(1) .inner_wrap .icon {
+  background: url("../img/icon/icon04.png") no-repeat;
+  background-position: center;
+}
+
+body.sub #section2 .row .col .flex_wrap:last-child .flex_item:nth-child(2) .inner_wrap .icon {
+  background: url("../img/icon/icon05.png") no-repeat;
+  background-position: center;
+}
+
+body.sub #section2 .row .col .flex_wrap:last-child .flex_item:nth-child(3) .inner_wrap .icon {
+  background: url("../img/icon/icon06.png") no-repeat;
+  background-position: center;
+}
+
+body.sub #section3 {
+  padding: 100px 0;
+}
+
+body.sub #section3 .row .col .flex_wrap .flex_item {
+  height: 1000px;
+}
+
+body.sub #section4 {
+  padding: 100px 0;
+}
+
+body.sub #section4 .row {
+  padding: 0 50px;
+}
+
+body.sub #section4 .row .col.second .flex_wrap .flex_item:first-child .inner_wrap .img {
+  background: url("../img/doctor03.png");
+}
+
+body.sub #section4 .row .col.second .flex_wrap .flex_item:last-child .inner_wrap .img {
+  background: url("../img/doctor04.png");
+}
+
+body.sub #section5 {
+  padding-top: 50px;
+}
+
+body.sub #section5 .row {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  body.sub #section3 .row .col .flex_wrap .flex_item {
+    flex: 0 0 100%;
+    height: auto;
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  body.sub h2 {
+    font-size: 35px;
+  }
+  body.sub #section1 .row.left .col:first-child {
+    flex: 0 0 40%;
+  }
+  body.sub #section1 .row.left .col:last-child {
+    flex: 0 0 50%;
+    margin-right: 0;
+  }
+  body.sub #section1 .row.right .col:first-child {
+    flex: 0 0 50%;
+    padding-left: 30px;
+  }
+  body.sub #section1 .row.right .col:last-child {
+    flex: 0 0 40%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  body.sub #section1 {
+    padding: 50px 0;
+  }
+  body.sub #section1 .row.left .col:first-child {
+    flex: 0 0 100%;
+    order: 2;
+  }
+  body.sub #section1 .row.left .col:last-child {
+    flex: 0 0 100%;
+    order: 1;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  body.sub #section1 .row.right .col:first-child {
+    flex: 0 0 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  body.sub #section1 .row.right .col:last-child {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,7 @@
+/* active interaction */
+.container.active{
+  .row{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
