@@ -1,6 +1,6 @@
 // main page layout
 body{
-  p{ word-break: break-all; font-size: $fontSizeSmall;}
+  p{ font-size: $fontSizeSmall;}
   h2{
     position: relative;
     text-transform: uppercase;
@@ -253,7 +253,7 @@ body{
                 margin: 15px 0;
               }
               p{
-                font-size: $fontSizeExtraSmall;
+                font-size: $fontSizeSmall;
               }
             }
             &:nth-child(1){

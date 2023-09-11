@@ -147,7 +147,6 @@ input[type=text]::placeholder {
 }
 
 body p {
-  word-break: break-all;
   font-size: 17px;
 }
 
@@ -446,7 +445,7 @@ body #section3 .row .col .flex_wrap .flex_item .inner_wrap h3 {
 }
 
 body #section3 .row .col .flex_wrap .flex_item .inner_wrap p {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 body #section3 .row .col .flex_wrap .flex_item:nth-child(1) .inner_wrap .img {
